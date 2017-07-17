@@ -1,0 +1,1797 @@
+@charset "UTF-8";
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  background: #f6f9f9 !important;
+}
+
+.header h1, .header p {
+  font-weight: 300 !important;
+}
+
+.header:not(.white) {
+  /**/
+  background-color: #00b185;
+  background-color: -moz-linear-gradient(45deg, #00b185 0%, #28cbd3 100%);
+  background-color: -webkit-gradient(left bottom, right top, color-stop(0%, #00b185), color-stop(100%, #28cbd3));
+  background-color: -webkit-linear-gradient(45deg, #00b185 0%, #28cbd3 100%);
+  background-color: -o-linear-gradient(45deg, #00b185 0%, #28cbd3 100%);
+  background-color: -ms-linear-gradient(45deg, #00b185 0%, #28cbd3 100%);
+  background-color: linear-gradient(45deg, #00b185 0%, #28cbd3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b185', endColorstr='#28cbd3', GradientType=1 );
+  /*background-image: url("../image/hero.png")!*tpa=https://slack.sendpulse.com/resources/assets__slack/img/hero.png*! !important;*/
+  background-repeat: repeat;
+  background-position: center top;
+  color: #fff;
+}
+
+@media (max-width: 639px) {
+  .header:not(.white) .header__text {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: 640px) {
+  .header:not(.white) .header__text {
+    padding-top: 160px;
+    padding-bottom: 200px;
+  }
+}
+
+@media (max-width: 639px) {
+  .header:not(.white) {
+    text-align: left;
+    /*
+            .btn {
+                width: 100%;
+                text-align: center;
+                display: inline-block;
+                margin-top: 20px;
+                text-decoration: none;
+                background: #f64747;
+                color: #fff;
+                font-size: 16px;
+                border-radius: 2px;
+                padding: 12px 22px;
+            }
+            */
+  }
+  .header:not(.white) h1 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+  .header:not(.white) p {
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+  .header:not(.white) .btn {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 640px) {
+  .header:not(.white) {
+    text-align: center;
+    /*
+            .btn {
+                display: inline-block;
+                margin-top: 53px;
+                text-decoration: none;
+                background: #f64747;
+                color: #fff;
+                font-size: 19px;
+                border-radius: 2px;
+                padding: 15px 40px;
+            }
+            */
+  }
+  .header:not(.white) h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .header:not(.white) p {
+    margin-top: 17px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .header:not(.white) .btn {
+    margin-top: 53px;
+  }
+}
+
+.header .logo {
+  position: absolute;
+  z-index: 2;
+  left: 15px;
+  top: 35px;
+}
+
+@media (max-width: 400px) {
+  .header .logo img {
+    max-width: 100px;
+  }
+}
+
+.header .logo + .beta {
+  position: absolute;
+  top: 60px;
+  left: 15px;
+  font-size: 13px;
+  font-weight: 400;
+  opacity: .8;
+}
+
+.header__nav {
+  margin-top: 25px;
+  text-align: right;
+}
+
+@media (min-width: 992px) {
+  .header__nav .button:last-child {
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header__nav .button:last-child {
+    margin-left: 6px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__nav .button {
+    margin-top: 5px;
+    zoom: .75;
+  }
+}
+
+.header .desc-big {
+  margin-bottom: 10px;
+}
+
+.header.white .phone {
+  color: #05a3c0 !important;
+}
+
+.header.white .phone:before {
+  background: url("../img/icons/phone-blue.svg")/*tpa=https://slack.sendpulse.com/resources/assets__slack/img/icons/phone-blue.svg*/ no-repeat center !important;
+}
+
+@media (max-width: 370px) {
+  html[lang="by"] .header .phone {
+    position: absolute;
+    right: 15px;
+    top: 30px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  html[lang="by"] .header .logo {
+    zoom: .75;
+    margin-top: 14px !important;
+  }
+}
+
+@media (min-width: 369px) {
+  html[lang="by"] .header .phone {
+    position: absolute;
+    right: 15px;
+    top: 30px;
+    padding-left: 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  html[lang="by"] .header .phone:before {
+    position: absolute;
+    content: " ";
+    width: 22px;
+    height: 22px;
+    top: 1px;
+    left: 0px;
+    background: url("../img/icons/phone.svg")/*tpa=https://slack.sendpulse.com/resources/assets__slack/img/icons/phone.svg*/ no-repeat center;
+  }
+}
+
+html[lang="by"] .header .phone:before {
+  -webkit-animation-name: phone;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: phone;
+  animation-duration: 4s;
+  -webkit-transition-delay: 2s;
+  transition-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: infinite;
+  -ms-transform: rotate(0deg);
+  /* IE 9 */
+  -webkit-transform: rotate(0deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes phone {
+  0% {
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+  }
+  3% {
+    -ms-transform: rotate(-20deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-20deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-20deg);
+  }
+  6% {
+    -ms-transform: rotate(20deg);
+    /* IE 9 */
+    -webkit-transform: rotate(20deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(20deg);
+  }
+  9% {
+    -ms-transform: rotate(-20deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-20deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-20deg);
+  }
+  12% {
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+  }
+}
+
+/* Standard syntax */
+@keyframes phone {
+  0% {
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+  }
+  3% {
+    -ms-transform: rotate(-20deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-20deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-20deg);
+  }
+  6% {
+    -ms-transform: rotate(20deg);
+    /* IE 9 */
+    -webkit-transform: rotate(20deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(20deg);
+  }
+  9% {
+    -ms-transform: rotate(-20deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-20deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-20deg);
+  }
+  12% {
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+  }
+}
+
+body.white-bg > .content {
+  padding: 0px 0 51px 0;
+}
+
+body > .content {
+  padding: 93px 0 51px 0;
+}
+
+body > .content.smtp-server-info {
+  padding-bottom: 83px;
+}
+
+body > .content.smtp-server-info p {
+  font-weight: 300;
+}
+
+@media (max-width: 830px) {
+  body > .content.smtp-server-info br {
+    display: none !important;
+  }
+}
+
+body > .content .col-md-4 {
+  padding-bottom: 30px;
+}
+
+@media (max-width: 639px) {
+  body > .content h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+  body > .content p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+}
+
+@media (min-width: 640px) {
+  body > .content h3 {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: bold;
+  }
+  body > .content p {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: normal;
+  }
+}
+
+body > .content h3 {
+  font-size: 22px;
+  line-height: 30px;
+  color: #222;
+}
+
+body > .content p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #555;
+  font-weight: 300;
+}
+
+body > .content a {
+  color: #01c7ec;
+  text-decoration: none;
+}
+
+body > .content a:hover {
+  border-bottom: 2px solid #01c7ec;
+}
+
+.futures {
+  position: relative;
+  z-index: 3;
+  background: #f6f9f9;
+  padding: 150px 0 116px 0;
+}
+
+.futures .title-h1 {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 991px) {
+  .futures__bg {
+    position: absolute;
+    z-index: 1;
+    top: -230px;
+    left: -330px;
+    opacity: 0.1;
+    width: 1000px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .futures__bg {
+    position: absolute;
+    z-index: 1;
+    top: -230px;
+    left: -330px;
+    opacity: 0.1;
+  }
+}
+
+.futures .row {
+  position: relative;
+  z-index: 2;
+}
+
+.futures .item__bg {
+  background: #fff;
+  border-radius: 5px;
+  transition: .4s;
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+@media (max-width: 1199px) {
+  .futures .item__bg {
+    padding: 35px 30px 34px 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .futures .item__bg {
+    padding: 35px 60px 34px 60px;
+  }
+}
+
+.futures .item__bg .icon {
+  transition: .2s;
+}
+
+.futures .item__bg .title-h4 {
+  padding-top: 17px;
+}
+
+.futures .item__bg .desc-small {
+  padding-top: 11px;
+}
+
+@media (min-width: 1200px) {
+  .futures .item__bg .desc-small {
+    min-height: 90px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .futures .item__bg .desc-small {
+    min-height: 110px;
+  }
+}
+
+.futures .item__bg:hover {
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.futures .item__bg:hover .icon {
+  opacity: 1;
+}
+
+.futures .item__bg:not(:hover) {
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.futures .item__bg:not(:hover) .icon {
+  opacity: 0.6;
+}
+
+.hello-block {
+  position: relative;
+  z-index: 4;
+  padding: 160px 0 151px 0;
+  background: #fff;
+}
+
+.hello-block .desc-big {
+  margin-top: -8px;
+}
+
+@media (max-width: 767px) {
+  .hello-block .hello-block__img .robot {
+    z-index: -1;
+    position: absolute;
+    top: -60px;
+    right: -100px;
+    max-width: 300px;
+    margin: 20px auto 20px auto;
+    opacity: .2;
+  }
+}
+
+@media (max-width: 480px) {
+  .hello-block .hello-block__text {
+    padding-right: 40px;
+  }
+  .hello-block .button {
+    text-align: center;
+    min-width: 226px !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 991px) {
+  .hello-block .hello-block__text {
+    padding-right: 40px;
+  }
+  .hello-block .hello-block__img .robot {
+    z-index: -1;
+    position: absolute;
+    top: -60px;
+    right: -100px;
+    max-width: 300px;
+    margin: 20px auto 20px auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .hello-block .hello-block__text {
+    padding-right: 40px;
+  }
+  .hello-block .hello-block__img .robot {
+    position: absolute;
+    top: -300px;
+    left: 0;
+  }
+}
+
+.faq {
+  position: relative;
+  z-index: 4;
+  padding-bottom: 160px;
+  /*
+    .active + .faqanswer {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    a:not(.active) + .faqanswer {
+        opacity: 0;
+        visibility: hidden;
+    }
+    */
+}
+
+.faq .title-h1 {
+  margin-bottom: 13px;
+}
+
+.faq .icon-plus,
+.faq .icon-minus {
+  position: absolute;
+  left: -30px;
+  top: 21px;
+  transition: .2s;
+  width: 15px;
+  height: 3px;
+  position: relative;
+  display: inline-block;
+}
+
+.faq .icon-plus:before,
+.faq .icon-minus:before {
+  transition: .2s;
+  position: absolute;
+  content: "";
+  left: 6px;
+  top: -6px;
+  width: 3px;
+  height: 15px;
+  position: relative;
+  display: block;
+}
+
+.faq .icon-minus:before {
+  opacity: 0;
+}
+
+.faq .icon-plus,
+.faq .icon-plus:before {
+  background-color: #f3a217;
+}
+
+.faq .icon-minus,
+.faq .icon-minus:before {
+  background-color: #435668;
+}
+
+.faq .icon-plus {
+  opacity: .7;
+}
+
+.faq .title-h3 {
+  transition: .4s;
+  font-weight: 400;
+}
+
+.faq .icon-minus,
+.faq .togglefaq:hover i,
+.faq .togglefaq:hover .title-h3 {
+  opacity: 1;
+}
+
+.faq .togglefaq .title-h3 {
+  font-weight: 300 !important;
+}
+
+.faq .title-h3 {
+  line-height: 24px;
+}
+
+.faq .togglefaq,
+.faq .faqanswer {
+  margin-left: 32px;
+}
+
+.faq .togglefaq {
+  padding: 5px 0 25px 0;
+  text-decoration: none;
+  display: block;
+  width: calc(100% - 50px);
+  margin-bottom: -1px;
+}
+
+.faq .togglefaq:not(.active) {
+  border-bottom: 2px solid #eceff0 !important;
+}
+
+.faq .togglefaq.active {
+  border-bottom: 2px solid #eceff0 !important;
+}
+
+.faq .faqanswer {
+  position: relative;
+  display: none;
+  width: 100%;
+  padding: 19px 60px 31px 0;
+}
+
+.faq .faqanswer a {
+  color: #01c7ec !important;
+}
+
+.faq .faqanswer b {
+  font-weight: 600;
+  color: black;
+}
+
+.faq .faqanswer p, .faq .faqanswer ul, .faq .faqanswer ol {
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.faq .faqanswer p + ul,
+.faq .faqanswer p + ol {
+  margin-top: 0px;
+  padding-bottom: 35px;
+}
+
+.faq .faqanswer img:not(.image) {
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.faq .faqanswer ul b.title, .faq .faqanswer ol b.title {
+  display: block;
+}
+
+.faq .faqanswer ul li, .faq .faqanswer ol li {
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+.faq .faqanswer xmp {
+  white-space: inherit;
+  display: inline-block;
+  margin-top: 0;
+  font-weight: 300;
+  font-style: italic;
+  color: #183691;
+}
+
+.faq p, .faq ul, .faq ol, .faq xmp {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.faq p {
+  color: #333;
+  margin: 0;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+
+@media (max-width: 991px) {
+  .faq .image {
+    position: relative !important;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .faq .padding-right p {
+    padding-right: 20px;
+  }
+  .faq .padding-left p {
+    padding-left: 20px;
+  }
+  .faq .image {
+    transition: .4s;
+    opacity: 1;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 40px 0px rgba(51, 51, 51, 0.2);
+    -moz-box-shadow: 0px 0px 40px 0px rgba(51, 51, 51, 0.2);
+    box-shadow: 0px 0px 40px 0px rgba(51, 51, 51, 0.2);
+  }
+  .faq .image.absolute {
+    position: absolute;
+    top: -90px;
+  }
+  .faq .image.right {
+    left: 0;
+  }
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none !important;
+  transition: 0.4s;
+}
+
+.button.small {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0.8em 1.8em;
+  border-radius: 30px;
+}
+
+.button:not(.small) {
+  font-weight: 300;
+  font-size: 18px;
+  border-radius: 40px;
+}
+
+@media (max-width: 400px) {
+  .button:not(.small) {
+    padding: 12px 28px;
+  }
+}
+
+@media (min-width: 401px) {
+  .button:not(.small) {
+    padding: 12px 32px;
+  }
+}
+
+.button.shadow {
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.1);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.1);
+  box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.1);
+}
+
+.button.transparent:not(:hover) {
+  color: #fff;
+  background-color: rgba(250, 250, 250, 0.2) !important;
+}
+
+.button.transparent:hover {
+  color: #fff;
+  background-color: rgba(250, 250, 250, 0.3) !important;
+}
+
+.button.white:not(:hover) {
+  color: #11bba6 !important;
+  background-color: #fafafa !important;
+}
+
+.button.white:not(:hover).bordered {
+  -webkit-box-shadow: 0px 0px 0px 8px rgba(250, 250, 250, 0.15);
+  -moz-box-shadow: 0px 0px 0px 8px rgba(250, 250, 250, 0.15);
+  box-shadow: 0px 0px 0px 8px rgba(250, 250, 250, 0.15);
+}
+
+.button.white:hover {
+  color: #0d8c7d;
+  background-color: rgba(250, 250, 250, 0.95) !important;
+}
+
+.button.white:hover.bordered {
+  -webkit-box-shadow: 0px 0px 20px 20px rgba(250, 250, 250, 0.1);
+  -moz-box-shadow: 0px 0px 20px 20px rgba(250, 250, 250, 0.1);
+  box-shadow: 0px 0px 20px 20px rgba(250, 250, 250, 0.1);
+}
+
+.button.green:not(:hover) {
+  color: #fff !important;
+  background-color: #11bba6 !important;
+}
+
+.button.green:not(:hover).bordered {
+  -webkit-box-shadow: 0px 0px 0px 8px rgba(0, 117, 133, 0.07);
+  -moz-box-shadow: 0px 0px 0px 8px rgba(0, 117, 133, 0.07);
+  box-shadow: 0px 0px 0px 8px rgba(0, 117, 133, 0.07);
+}
+
+.button.green:hover {
+  color: #0d8c7d;
+  background-color: rgba(250, 250, 250, 0.95) !important;
+}
+
+.button.green:hover.bordered {
+  -webkit-box-shadow: 0px 0px 20px 20px rgba(0, 117, 133, 0.07);
+  -moz-box-shadow: 0px 0px 20px 20px rgba(0, 117, 133, 0.07);
+  box-shadow: 0px 0px 20px 20px rgba(0, 117, 133, 0.07);
+}
+
+.button.light:not(:hover) {
+  color: #fff !important;
+  background-color: #e8fdfa !important;
+}
+
+.button.light:hover {
+  color: #fff !important;
+  background-color: #b9f9f1 !important;
+}
+
+.button.green:not(:hover) {
+  color: #fff !important;
+  background-color: #11bba6 !important;
+}
+
+.button.green:hover {
+  color: #fff !important;
+  background-color: #0fa895 !important;
+}
+
+.button .icon {
+  margin: -3px 4px 0 0;
+}
+
+.btn.white {
+  background: #fff;
+}
+
+@media (min-width: 640px) and (max-width: 860px) {
+  .footer .item {
+    width: 50% !important;
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+}
+
+.footer {
+  padding-top: 70px;
+}
+
+.footer:not(.light) {
+  background: #f8f8f8;
+}
+
+.footer.light {
+  background: #fbfbfb;
+}
+
+.footer a[href^="tel:"] {
+  text-decoration: none !important;
+  cursor: default;
+}
+
+.footer .item {
+  padding-bottom: 30px;
+}
+
+@media (min-width: 469px) and (max-width: 767px) {
+  .footer .item {
+    width: 48% !important;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .item .social .title-h4, .footer .item .apps .title-h4 {
+    display: none;
+  }
+}
+
+.footer .title-h4 {
+  font-size: 14px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .footer nav ul li {
+    margin-bottom: 7px;
+  }
+  .footer .apps a:not(:last-child) {
+    margin-right: 20px !important;
+  }
+  .footer .social a:not(:last-child) {
+    margin-right: 15px !important;
+  }
+}
+
+.footer nav li > div {
+  cursor: pointer !important;
+  visibility: visible !important;
+  display: inline-block;
+}
+
+.footer nav a, .footer nav li > div > div {
+  display: inline-block;
+  color: #666;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.footer nav a:hover:not([href^="tel:"]), .footer nav li > div > div:hover:not([href^="tel:"]) {
+  color: #01c7ec;
+  border-bottom: 1px solid #01c7ec;
+  text-decoration: none !important;
+}
+
+.footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer nav li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer .apps,
+.footer .social {
+  padding-bottom: 20px;
+}
+
+.footer .apps .icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+}
+
+.footer .apps .icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer .apps .icon:hover {
+  opacity: .9;
+}
+
+.Android {
+  background-image: url("/image/google-play.svg");
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+}
+
+.iTunes {
+  background-image: url("/image/itunes-apple.svg");
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+}
+
+.footer .social .icon {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  border-radius: 34px;
+  border-width: 2px;
+  border-style: solid;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer .social .icon:not(:last-child) {
+  margin-right: 5px;
+}
+
+.footer .social .icon:not(:hover) {
+  opacity: .6;
+}
+
+.footer .social .icon:hover {
+  opacity: 1;
+}
+
+.footer .social .icon[href*="facebook.com"] {
+  border-color: #3a589b;
+  background-size: 13px;
+  background-image: url("../img/icons/facebook.svg")/*tpa=https://slack.sendpulse.com/resources/assets__slack/img/icons/facebook.svg*/;
+}
+
+.footer .social .icon[href*="twitter.com"] {
+  border-color: #00afed;
+  background-size: 12px;
+  background-image: url("../img/icons/twitter.svg")/*tpa=https://slack.sendpulse.com/resources/assets__slack/img/icons/twitter.svg*/;
+}
+
+.footer .social .icon[href*="plus.google.com"] {
+  border-color: #f84a46;
+  background-size: 16px;
+  background-image: url("../img/icons/google-plus.svg")/*tpa=https://slack.sendpulse.com/resources/assets__slack/img/icons/google-plus.svg*/;
+}
+
+.footer .social .icon[href*="linkedin.com"] {
+  border-color: #007cb7;
+  background-size: 14px;
+  background-image: url("../img/icons/linkedin.svg")/*tpa=https://slack.sendpulse.com/resources/assets__slack/img/icons/linkedin.svg*/;
+}
+
+.footer .social .icon[href*="sendpulse.com/ru/blog/feed"],
+.footer .social .icon[href*="sendpulse.com/blog/feed"] {
+  border-color: #ff6f2b;
+  background-size: 12px;
+  background-image: url("../img/icons/rss.svg")/*tpa=https://slack.sendpulse.com/resources/assets__slack/img/icons/rss.svg*/;
+}
+
+.copyright {
+  padding: 20px 0;
+  border-top: 1px solid #ededed;
+  font-size: 12px;
+  line-height: 18px;
+  color: #666;
+}
+
+.copyright:not(.light) {
+  background: #f8f8f8;
+}
+
+.copyright.light {
+  background: #fbfbfb;
+}
+
+#signup {
+  /*
+    .form-control {
+        position: relative;
+        z-index: 1 !important;
+        display: block;
+    }
+    input.form-control.animated-input + .placeholder {
+        display: block;
+        transition: 0.2s;
+        position: absolute;
+        top: 10px;
+        left: 25px;
+        z-index: 2 !important;
+    }
+
+    */
+}
+
+#signup input[value=" "] + .placeholder {
+  font-size: 14px;
+  color: #666;
+  transform: translate(0px, 0px);
+  font-weight: normal !important;
+}
+
+#signup input[type="checkbox"] {
+  margin-top: 0px;
+}
+
+#signup .modal-dialog {
+  max-width: 500px !important;
+}
+
+#signup .glyphicon-question-sign,
+#signup #showPassEye {
+  pointer-events: auto !important;
+}
+
+#signup .modal-body {
+  padding: 16px 40px 40px 40px;
+}
+
+@media (max-width: 639px) {
+  #signup .modal-body {
+    padding: 6px 20px 20px 20px;
+  }
+  #signup .modal-body .g-recaptcha {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 640px) {
+  #signup .modal-body {
+    padding: 16px 40px 40px 40px;
+  }
+}
+
+#signup .modal-content {
+  max-width: 500px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.36);
+}
+
+#signup .glyphicon-question-sign,
+#signup .glyphicon-question-sign:before {
+  cursor: pointer;
+}
+
+#signup .close {
+  font-size: 26px !important;
+  position: absolute !important;
+  right: 15px !important;
+  top: 5px !important;
+  opacity: .4;
+}
+
+#signup input.form-control {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #cacaca;
+  color: #8a8a8a;
+  background-color: #fefefe;
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+  border-radius: 1px;
+  transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#signup .btn, #signup .login_link {
+  padding: 15px 35px;
+  height: 46px;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  border: none !important;
+  text-decoration: none !important;
+  border-radius: 3px;
+}
+
+#signup .btn#btn-reg, #signup .login_link#btn-reg {
+  background: #f64747;
+  color: #fff;
+}
+
+#signup .login_link {
+  color: #757575;
+}
+
+.remodal-auth {
+  border-radius: 2px;
+}
+
+.remodal-auth .social-signup-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #222;
+  font-weight: normal;
+}
+
+.remodal-auth h3.social-signup-title {
+  padding-bottom: 5px;
+  margin-bottom: 0;
+  margin-top: 0px;
+}
+
+.remodal-auth .buttons:after {
+  position: relative;
+  display: block;
+  content: " ";
+  clear: both;
+}
+
+.remodal-auth .button,
+.remodal-auth .login_link {
+  margin-top: 15px;
+  text-transform: none;
+  width: calc(50% - 7px);
+  display: inline-block;
+  text-align: center;
+}
+
+.remodal-auth .button.alert,
+.remodal-auth .login_link.alert {
+  float: left;
+}
+
+.remodal-auth .button.link,
+.remodal-auth .login_link.link {
+  float: right;
+  background: rgba(205, 205, 205, 0.2);
+  color: #333;
+}
+
+.remodal-auth .button.link:hover,
+.remodal-auth .login_link.link:hover {
+  background: rgba(205, 205, 205, 0.3);
+}
+
+@media (max-width: 490px) {
+  .remodal-auth #btn-reg,
+  .remodal-auth .btn,
+  .remodal-auth .login_link {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .remodal-auth #btn-reg,
+  .remodal-auth .btn,
+  .remodal-auth .login_link {
+    width: 100% !important;
+    float: none !important;
+  }
+}
+
+.remodal-auth #btn-reg {
+  width: calc(50% - 7px);
+}
+
+.remodal-auth .login_link {
+  float: right;
+  background: rgba(205, 205, 205, 0.2);
+  color: #333;
+}
+
+.remodal-auth .btn:not(#btn-reg) {
+  width: calc(50% - 7px);
+}
+
+.remodal-auth .btn,
+.remodal-auth .login_link {
+  margin-top: 15px;
+  text-transform: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.remodal-auth .remodal-content {
+  text-align: left;
+}
+
+.remodal-auth .remodal-content p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.remodal-auth .remodal-content label {
+  font-size: 13px;
+  line-height: 13px;
+  padding: 25px 0 10px;
+  display: block;
+}
+
+.remodal-auth .remodal-content .control-label {
+  display: none !important;
+}
+
+.remodal-auth .remodal-content .form-group.login-options {
+  margin-bottom: 5px;
+}
+
+.remodal-auth .remodal-content .form-group.login-options p.checkbox {
+  margin-left: 20px;
+}
+
+.remodal-auth .remodal-content .form-group:not(.login-options) label {
+  font-weight: bold;
+}
+
+.remodal-auth .remodal-content .form-group {
+  padding-bottom: 0;
+  position: relative;
+}
+
+.remodal-auth .remodal-content .form-group.text {
+  margin-top: 20px;
+}
+
+.remodal-auth .remodal-content .form-group.text:not(.end) {
+  margin-bottom: 35px;
+}
+
+.remodal-auth .remodal-content .form-group.text.end {
+  margin-bottom: 0;
+}
+
+.remodal-auth .remodal-content .form-group input.form-control.animated-input {
+  z-index: 1;
+  background: transparent;
+}
+
+.remodal-auth .remodal-content .form-group input.form-control.animated-input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.remodal-auth .remodal-content .form-group input.form-control.animated-input::-moz-placeholder {
+  color: transparent;
+}
+
+.remodal-auth .remodal-content .form-group input.form-control.animated-input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.remodal-auth .remodal-content .form-group input.form-control.animated-input:-moz-placeholder {
+  color: transparent;
+}
+
+.remodal-auth .remodal-content .form-group .placeholder {
+  display: none;
+}
+
+.remodal-auth .remodal-content .form-group input.form-control.animated-input + .placeholder {
+  display: block;
+  transition: 0.2s;
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  z-index: 2 !important;
+}
+
+.remodal-auth .remodal-content .form-group input.form-control.animated-input[value=""] + .placeholder {
+  z-index: -1;
+  font-size: 14px;
+  color: #666;
+  transform: translate(0px, 0px);
+}
+
+.remodal-auth .remodal-content .form-group input.form-control.animated-input:focus + .placeholder,
+.remodal-auth .remodal-content .form-group input.form-control.animated-input:not([value=""]) + .placeholder {
+  z-index: 2;
+  font-size: 12px;
+  color: #333;
+  font-weight: bold;
+  transform: translate(-3px, -20px);
+  background: white;
+  padding: 0 3px;
+}
+
+.remodal-auth .remodal-content input {
+  margin-bottom: 0;
+}
+
+.remodal-auth .remodal-content .has-error input {
+  border-color: #f64747;
+}
+
+.remodal-auth .remodal-content .has-error .text-error {
+  display: block !important;
+  font-size: 13px;
+  padding: 6px 0 0;
+}
+
+.remodal-auth .remodal-content .has-error .text-error:not(.soft) {
+  color: #f64747;
+}
+
+.remodal-auth .remodal-content .has-error p.checkbox label {
+  color: #f64747;
+}
+
+.remodal-auth .remodal-content .text-error {
+  display: none;
+}
+
+.remodal-auth .remodal-content p.checkbox {
+  margin: 0;
+  padding: 0;
+}
+
+.remodal-auth .remodal-content p.checkbox label {
+  font-size: 13px;
+}
+
+.remodal-auth .remodal-content #error-antispanrule .text-error {
+  padding-top: 0;
+}
+
+.remodal-auth .remodal-footer {
+  margin-top: 40px;
+  border-top: 1px solid rgba(205, 205, 205, 0.4);
+  position: relative;
+}
+
+.remodal-auth .remodal-footer.ru:before {
+  content: "или";
+}
+
+.remodal-auth .remodal-footer.en:before {
+  content: "or";
+}
+
+.remodal-auth .remodal-footer:before {
+  position: absolute;
+  text-align: center;
+  top: -15px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 26px;
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.remodal-auth .remodal-footer .button {
+  margin-top: 20px;
+  width: calc(50% - 7px);
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.remodal-auth .remodal-footer .button i:before {
+  position: absolute;
+  display: inline-block;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  margin: -2px 0 0 -2px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.remodal-auth .remodal-footer .button span {
+  padding-left: 28px;
+}
+
+.remodal-auth .remodal-footer .button#faceebook_btn {
+  float: left;
+  background-color: #4267b2;
+  color: #fff !important;
+}
+
+.remodal-auth .remodal-footer .button#faceebook_btn i:before {
+  background-size: 20px;
+  background-image: url("../img/icons/facebook-2.svg")/*tpa=https://slack.sendpulse.com/resources/assets__slack/img/icons/facebook-2.svg*/;
+}
+
+.remodal-auth .remodal-footer .button#google_btn {
+  float: right;
+  color: #757575;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.remodal-auth .remodal-footer .button#google_btn:hover {
+  color: #333;
+}
+
+.remodal-auth .remodal-footer .button#google_btn i:before {
+  background-size: 20px;
+  background-image: url("../img/icons/google.svg")/*tpa=https://slack.sendpulse.com/resources/assets__slack/img/icons/google.svg*/;
+}
+
+.remodal-auth .form-group .inside-it-block {
+  position: relative;
+}
+
+.remodal-auth .form-group .inside-it-block .glyphicon.glyphicon-question-sign.form-control-feedback:not(#whyPhone) {
+  display: none;
+}
+
+.remodal-auth .form-group .inside-it-block .glyphicon-eye-close {
+  opacity: 1 !important;
+}
+
+.remodal-auth .form-group .inside-it-block #whyPhone,
+.remodal-auth .form-group .inside-it-block .glyphicon-eye-close,
+.remodal-auth .form-group .inside-it-block .glyphicon-eye-open {
+  z-index: 2 !important;
+  cursor: pointer;
+  transition: 0.5s;
+  cursor: pointer;
+  width: 30px;
+  height: 39px;
+  line-height: 39px;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  right: 15px;
+}
+
+.remodal-auth .form-group .inside-it-block #whyPhone:not(:hover),
+.remodal-auth .form-group .inside-it-block .glyphicon-eye-close:not(:hover),
+.remodal-auth .form-group .inside-it-block .glyphicon-eye-open:not(:hover) {
+  opacity: 0.55;
+}
+
+.remodal-auth .social-signup {
+  padding-top: 40px;
+  position: relative;
+}
+
+.remodal-auth .social-signup:after {
+  position: relative;
+  content: " ";
+  display: block;
+  height: 1px;
+  width: 100%;
+  clear: both;
+}
+
+.remodal-auth .social-signup h4.social-signup-title {
+  padding-bottom: 2px;
+}
+
+.remodal-auth .social-signup .btn {
+  margin-top: 20px;
+  width: calc(50% - 7px);
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.remodal-auth .social-signup .btn i:before {
+  position: absolute;
+  display: inline-block;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  margin: -2px 0 0 -2px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.remodal-auth .social-signup .btn i {
+  padding-right: 28px;
+}
+
+.remodal-auth .social-signup .btn#faceebook_btn {
+  float: left;
+  background-color: #4267b2;
+  color: #fff !important;
+}
+
+.remodal-auth .social-signup .btn#faceebook_btn i:before {
+  background-size: 20px;
+  background-image: url("../img/icons/facebook-2.svg")/*tpa=https://slack.sendpulse.com/resources/assets__slack/img/icons/facebook-2.svg*/;
+}
+
+.remodal-auth .social-signup .btn#google_btn {
+  float: right;
+  color: #757575;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.remodal-auth .social-signup .btn#google_btn:hover {
+  color: #333;
+}
+
+.remodal-auth .social-signup .btn#google_btn i:before {
+  background-size: 20px;
+  background-image: url("../img/icons/google.svg")/*tpa=https://slack.sendpulse.com/resources/assets__slack/img/icons/google.svg*/;
+}
+
+/*temp*/
+.remodal-auth .remodal-footer .button {
+  margin-top: 20px;
+  width: calc(50% - 7px);
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.remodal-auth .remodal-footer .button i:before {
+  position: absolute;
+  display: inline-block;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  margin: -2px 0 0 -2px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.remodal-auth .remodal-footer .button span {
+  padding-left: 28px;
+}
+
+.remodal-auth .remodal-footer .button#faceebook_btn {
+  float: left;
+  background-color: #4267b2;
+  color: #fff !important;
+}
+
+.remodal-auth .remodal-footer .button#faceebook_btn i:before {
+  background-size: 20px;
+  background-image: url("assets/img/icons/facebook-2.svg")/*tpa=https://slack.sendpulse.com/resources/assets__slack/css/assets/img/icons/facebook-2.svg*/;
+}
+
+.remodal-auth .remodal-footer .button#google_btn {
+  float: right;
+  color: #757575;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.remodal-auth .remodal-footer .button#google_btn:hover {
+  color: #333;
+}
+
+.remodal-auth .remodal-footer .button#google_btn i:before {
+  background-size: 20px;
+  background-image: url("assets/img/icons/google.svg")/*tpa=https://slack.sendpulse.com/resources/assets__slack/css/assets/img/icons/google.svg*/;
+}
+
+.center {
+  text-align: center;
+}
+
+@media (max-width: 639px) {
+  /*.button:not(.small) {
+        width: 100%;
+        text-align: center;
+        .icon {
+            margin-right: 6px;
+        }
+    }*/
+  .title-h1 {
+    zoom: .6;
+  }
+  .title-h3 {
+    font-size: 20px !important;
+    line-height: 24px !important;
+  }
+  .desc-big {
+    font-size: 16px !important;
+    line-height: 25px !important;
+  }
+}
+
+.title-h1 {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.title-h1.dark {
+  color: #2d3e4f;
+}
+
+.title-h1 .white {
+  color: #fff;
+}
+
+.title-h3 {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #2d3e4f;
+}
+
+.title-h4 {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #2d3e4f;
+}
+
+.desc-small {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.desc-big {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+
+.title-h2 {
+  font-weight: 300;
+  padding-bottom: 24px;
+}
+
+@media (max-width: 639px) {
+  .title-h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 640px) {
+  .title-h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.desc {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 300;
+  color: #434343;
+  margin-bottom: 14px;
+}
+
+.regular {
+  font-weight: 400 !important;
+  color: #222 !important;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.btn,
+.login_link,
+.content a,
+.get-support .button {
+  transition: .4s;
+}
+
+.btn:hover,
+.login_link:hover,
+.content a:hover,
+.get-support .button:hover {
+  opacity: .85;
+}
+
+.login_link:hover,
+.btn-default:hover {
+  color: #222 !important;
+}
+
+@media (max-width: 639px) {
+  .btn.red {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    background: #f64747;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 2px;
+    padding: 12px 22px;
+  }
+}
+
+@media (min-width: 640px) {
+  .btn.red {
+    display: inline-block;
+    text-decoration: none;
+    background: #f64747;
+    color: #fff;
+    font-size: 19px;
+    border-radius: 2px;
+    padding: 15px 40px;
+  }
+}
+
+.support-btn {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
