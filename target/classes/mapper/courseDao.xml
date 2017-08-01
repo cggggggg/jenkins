@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.can.pojo.CourseDao">
+    <select id="findCourseById" resultType="com.can.dao.Course">
+      select course_id as id, course_name as name, course_delete_flg as deleteFlag from t_course where course_id=#{courseId}
+    </select>
+
+    <select id="getList" resultMap="courseList">
+        SELECT * FROM t_course
+    </select>
+
+    <resultMap id="courseList" type="com.can.dao.Course">
+        <id property="id" column="course_id"></id>
+        <result property="name" column="course_name"></result>
+        <result property="deleteFlg" column="course_delete_flg"></result>
+    </resultMap>
+
+    <update id="updateCourseInfo" parameterType="com.can.dao.Course">
+        UPDATE t_course SET course_name=#{name} WHERE course_id =#{id};
+    </update>
+</mapper>

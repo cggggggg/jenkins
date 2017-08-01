@@ -36,7 +36,7 @@
                 <div class="title-h1">Do email marketing without leaving Slack!</div>
                 <div class="desc-big">Send email and web push campaigns from Slack</div>
                 <a class="button white icon bordered" href="javascript:void(0)">
-                    <img src="/image/icon__slack-2.svg" width="26" height="26" class="icon"> Add SendPulse to Slack
+                    <img src="/image/icon__slack2.svg" width="26" height="26" class="icon"> Add SendPulse to Slack
                 </a>
             </div>
         </div>

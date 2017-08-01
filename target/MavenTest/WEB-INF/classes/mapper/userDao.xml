@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.can.pojo.UserDao">
+
+
+    <!--对象作为参数-->
+    <!--<select id="login" parameterType="com.can.dao.User" resultType="com.can.dao.User">
+        SELECT name as username,createtime as createtime FROM user WHERE name=#{username} AND password=#{password};
+    </select>-->
+
+    <!--map集合作为参数-->
+    <select id="login" resultType="com.can.dao.User" parameterType="Map">
+        SELECT name as username,createtime as createtime FROM USER  <where>name=#{username} AND password=#{password}</where>;
+    </select>
+
+
+</mapper>
