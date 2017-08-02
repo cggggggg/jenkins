@@ -79,7 +79,7 @@
         </div>
     </form>
 </div>
-<div>测试自动部署tomcat</div>
+<div>测试自动部署tomcat-2</div>
 <c:if test="${message=='p_error'}">
     <div class="alert alert-danger" role="alert">密码或者用户名错误</div>
 </c:if>
